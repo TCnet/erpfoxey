@@ -1,0 +1,19 @@
+<tr>
+  <td><%= wuyun.name %></td>
+  <td><%= wuyun.year %></td>
+    <td><%= wuyun.tgyear %></td>
+      <td>
+        <%= wuyun.wyst.to_s[2..6] %><br>
+        <%= wuyun.wykq.to_s[2..6] %><br>
+        <%= wuyun.wyzhy %><%=set_qr(wuyun.tgyear)%><br>
+        <%= wuyun.wyzhq %><br>
+        <%= wuyun.wyzq.to_s[2..6] %><br>
+      </td>
+
+  <td>
+    <%= link_to raw("<i class=\"fa fa-pencil \" aria-hidden=\"true\"></i> Edit"), edit_wuyun_path(wuyun), {:title => "编辑", class: "link-primary"} %>
+    |
+      <%= link_to raw("<i class=\"fa fa-trash-o \" aria-hidden=\"true\"></i> Delete"), wuyun, method: :delete, data: { turbo_method: :delete, turbo_confirm: "确认删除?"},class: "link-danger" %>
+
+  </td>
+</tr>

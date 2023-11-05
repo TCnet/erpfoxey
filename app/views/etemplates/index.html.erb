@@ -1,0 +1,46 @@
+<% provide(:title, 'My Templates') %>
+
+  <div class="row">
+    <aside class="col-md-3 albums_menu">
+      <%= render 'shared/etemplate_menu' %>
+    </aside>
+    <div class="col-md-9">
+
+      <div class="row templates">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">当前使用</th>
+              <th scope="col">Options</th>
+            </tr>
+          </thead>
+          <% @etemplates.each do |ob| %>
+            <tr>
+              <td>
+                <%= link_to ob.name, ob %>
+
+              </td>
+              <td>
+
+                <%= ob.isused %>
+
+              </td>
+              <td>
+                <p>
+                  <%= link_to "edit",edit_etemplate_path(ob) %>
+                  |
+                  <%= link_to "delete", ob, method: :delete, data: { turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
+                </p>
+              </td>
+            </tr>
+
+          <% end %>
+
+        </table>
+      </div>
+
+      <%= will_paginate %>
+    </div>
+
+  </div>

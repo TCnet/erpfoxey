@@ -1,0 +1,36 @@
+<% provide(:title, '五运六气新增') %>
+  <% provide(:button_text, '提交') %>
+    <div class="row">
+      <aside class="col-md-3 products_menu">
+        <%= render 'shared/wuyun_menu' %>
+      </aside>
+      <div class="col-md-9">
+        <h1>新增人物</h1>
+
+        <div class="row ">
+
+
+
+        <%= form_for(@wuyun, html: { class: "row g-2" }) do |f| %>
+
+        <div class="mb-3">
+          <%= f.label :name ,class: "form-label" %>
+          <%= f.text_field :name , class: "form-control"%>
+        </div>
+        <div class="mb-3">
+          <%= f.label :year ,class: "form-label" %>
+          <%= f.text_field :year , class: "form-control"%>
+        </div>
+        <div class="mb-3">
+          <%= f.label :time ,class: "form-label" %>
+          <%= f.text_field :time , class: "form-control"%>
+        </div>
+
+
+        <div><%= submit_tag "Sub", class: "btn btn-primary" %></div>
+        <% end %>
+      </div>
+
+    </div>
+
+  </div>

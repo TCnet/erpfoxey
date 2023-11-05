@@ -1,0 +1,32 @@
+<% provide(:title, '五运六气') %>
+<div class="row">
+  <aside class="col-md-3 products_menu">
+    <%= render 'shared/wuyun_menu' %>
+  </aside>
+  <div class="col-md-9">
+    <h1>五运六气</h1>
+
+    <div class="row ">
+<table id="myTable" class="table">
+<tr>
+  <th>Name</th>
+  <th>year</th><th>tg</th>
+    <th>司天</th>
+  <th>Actions</th>
+</tr>
+<%= render @wuyuns %>
+
+</table>
+
+</div>
+
+<%= will_paginate %>
+
+</div>
+<script>
+$(document).ready(function () {
+  $('#myTable').DataTable();
+});
+</script>
+
+</div>

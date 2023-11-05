@@ -1,11 +1,11 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.17.0"
 
-set :application, 'erpaod'
+set :application, 'erpfoxey'
 set :deploy_user, 'deploy'
 
 # setup repo details
-set :repo_url, 'https://github.com/TCnet/erpaod.git'
+set :repo_url, 'https://github.com/TCnet/erpfoxey.git'
 
 # setup rbenv.
 set :rbenv_type, :system

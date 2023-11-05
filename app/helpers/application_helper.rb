@@ -3,7 +3,7 @@ module ApplicationHelper
   def full_title(page_title = '')
 
   # 根据所在的页面返回完整的标题 def full_title(page_title = '')
-    base_title = "ERP for Aodrusa"
+    base_title = "ERP for Atditama"
     if page_title.empty?
       base_title
     else
@@ -12,11 +12,11 @@ module ApplicationHelper
   end
 
   def sitename
-    base_name = "Aodrusa"
+    base_name = "Atditama"
   end
 
   def siteurl
-    base_url = "www.aodursa.com"
+    base_url = "www.atditama.com"
   end
 
   def email

@@ -1,6 +1,6 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.18.0"
-bundle lock --add-platform x86_64-linux
+
 
 set :application, 'erpfoxey'
 set :deploy_user, 'deploy'

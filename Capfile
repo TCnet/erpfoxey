@@ -29,6 +29,8 @@ require "capistrano/bundler"
 #require "capistrano/rails/migrations"
 require 'capistrano/cookbook'
 
+
+
 require 'capistrano/puma'
 install_plugin Capistrano::Puma, load_hooks: false  # Default puma tasks
 install_plugin Capistrano::Puma::Nginx, load_hooks: false   # if you want to upload a nginx site template

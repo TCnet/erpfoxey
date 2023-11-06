@@ -26,6 +26,7 @@ gem 'mimemagic', github: 'mimemagicrb/mimemagic'
 
 group :production do
    gem 'pg',         '1.1.4'
+
 end
 
 
@@ -35,7 +36,7 @@ gem "sprockets-rails"
 
 
 # Use the Puma web server [https://github.com/puma/puma]
-gem "puma", "~> 5.0"
+gem "puma"
 
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails"
@@ -87,6 +88,7 @@ group :development do
   gem 'capistrano-rbenv', "~> 2.0"
   gem 'capistrano-rails'
   gem 'capistrano-bundler'
+  gem 'capistrano3-puma'
 
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]

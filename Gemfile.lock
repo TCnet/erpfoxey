@@ -323,6 +323,7 @@ DEPENDENCIES
   capistrano-cookbook
   capistrano-rails
   capistrano-rbenv (~> 2.0)
+  capistrano3-puma
   capybara
   chartjs-ror
   debug
@@ -334,7 +335,7 @@ DEPENDENCIES
   mimemagic!
   mini_magick (= 4.9.5)
   pg (= 1.1.4)
-  puma (~> 5.0)
+  puma
   rails (~> 7.0.3)
   redis (~> 4.0)
   spreadsheet
